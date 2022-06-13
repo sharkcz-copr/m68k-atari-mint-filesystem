@@ -1,0 +1,23 @@
+# RPM macros for m68k-atari-mint cross tools
+
+%mint_target            m68k-atari-mint
+
+# Paths.
+%mint_sysroot           %{_prefix}/%{mint_target}/sys-root
+%mint_prefix            %{mint_sysroot}/usr
+%mint_exec_prefix       %{mint_prefix}
+%mint_bindir            %{mint_exec_prefix}/bin
+%mint_sbindir           %{mint_exec_prefix}/sbin
+%mint_libexecdir        %{mint_exec_prefix}/libexec
+%mint_libdir            %{mint_exec_prefix}/lib
+%mint_datadir           %{mint_prefix}/share
+%mint_docdir            %{mint_prefix}/share/doc
+%mint_infodir           %{mint_prefix}/share/info
+%mint_mandir            %{mint_prefix}/share/man
+%mint_sysconfdir        %{mint_prefix}/etc
+%mint_sharedstatedir    %{mint_prefix}/com
+%mint_localstatedir     %{mint_prefix}/var
+%mint_includedir        %{mint_prefix}/include
+
+# Build macros.
+%mint_host              %{mint_target}
